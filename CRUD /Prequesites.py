@@ -18,3 +18,5 @@ When we are Running some applications by using hibernate frame work we must crea
            session.save(e);
         //  Commit Transaction to save data into the database
          6) session.commit();
+            (or)
+ SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Student.class).buildSessionFactory();
